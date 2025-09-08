@@ -1,0 +1,344 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.menu-tabs {
+  /* border: 2px solid rgb(245, 5, 5); */
+/* display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu-tabs > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.menu-tabs > li > span {
+  /* border: 2px solid white ; */
+/*padding: 5px 10px;
+
+/*
+.menu-tabs > li:hover > span {
+  border-radius: 5px;
+  background-color: #292929;
+  color: crimson;
+  cursor: pointer;
+}
+
+.game-info-tab {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  border-top: 2px solid red;
+  top: 70px;
+
+  background-color: black;
+  padding: 10px;
+  list-style: none;
+  width: 130px;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown > li {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.dropdown > li:hover {
+  background-color: #292929;
+}
+
+.menu-tabs > li:hover > .dropdown {
+  display: block;
+}
+
+.support-tab {
+  position: relative;
+}
+
+.socials-tab {
+  position: relative;
+}
+
+.hide-tab:hover {
+  border-bottom: 5px crimson;
+}
+
+@media (max-width: 420px) {
+  .hide-tab {
+    display: none !important;
+  }
+}
+
+.navbar > section {
+  border: 2px solid red;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar > section > div {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 80%;
+}
+
+.navbar > section > div:first:child {
+  background-color: #2a2b29;
+}
+
+.navbar > section > button {
+  background: linear-gradient(#ff3643, #ff7763);
+  padding: 2px 15px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  font-weight: 700;
+}
+
+.hero {
+  height: 88vh;
+  width: 100%;
+  border: 5px solid red;
+}
+
+.hero > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hero-content > h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.hero-content > .btn-container {
+  border: 1px solid white;
+  padding: 3px;
+}
+
+.hero-content > button {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: crimson;
+  border: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.hero > button:hover {
+  background-color: white;
+  color: black;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.menu-tabs {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  gap: 20px;
+}
+
+.menu-tabs > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-tabs > li > span {
+  padding: 5px 10px;
+}
+
+.menu-tabs > li:hover > span {
+  border-radius: 5px;
+  background-color: #292929;
+  color: crimson;
+}
+
+.dropdown {
+  position: absolute;
+  border-top: 2px solid red;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px 0;
+  list-style: none;
+  width: 150px;
+  border-radius: 5px;
+  display: none;
+  z-index: 99;
+}
+
+.dropdown > li {
+  padding: 8px 15px;
+  font-size: 12px;
+  color: white;
+}
+
+.dropdown > li:hover {
+  background-color: #292929;
+}
+
+.menu-tabs > li:hover > .dropdown {
+  display: block;
+}
+
+@media (max-width: 420px) {
+  .hide-tab {
+    display: none !important;
+  }
+}
+
+.navbar > section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar > section > div {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #2a2b29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > section > button {
+  background: linear-gradient(#ff3643, #ff7763);
+  padding: 5px 15px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  height: 88vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  right: 10%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-content > h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-container > button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: crimson;
+  border: none;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-container > button:hover {
+  background-color: white;
+  color: black;
+}
