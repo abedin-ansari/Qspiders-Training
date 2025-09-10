@@ -193,3 +193,46 @@
 // tableTag.append(tr1, tr2, tr3);
 
 // mainTag.append(tableTag);
+
+// let tableData = [
+//   ["A", "B", "C"],
+//   ["D", "E", "F"],
+//   ["G", "H", "I"],
+// ];
+
+// const tableTag = document.createElement("table");
+// tableTag.border = "2px";
+
+// for (let row of tableData) {
+//   const tr = document.createElement("tr");
+
+//   for (let cell of row) {
+//     const td = document.createElement("td");
+//     td.innerText = cell;
+//     tr.append(td);
+//   }
+
+//   tableTag.append(tr);
+// }
+
+// mainTag.append(tableTag);
+
+// const formTag = document.createElement("form");
+// const emailInput = document.createElement("input");
+// const passwordInput = document.createElement("input");
+// const submitButton = document.createElement("button");
+
+// emailInput.type = "text";
+// emailInput.placeholder = "email";
+
+// passwordInput.type = "password";
+// passwordInput.placeholder = "password";
+
+// submitButton.innerText = "Submit";
+
+// formTag.append(emailInput, passwordInput, submitButton);
+// document.body.append(formTag);
+
+// function btnClicked() {
+//   console.log("button Clicked");
+// }
