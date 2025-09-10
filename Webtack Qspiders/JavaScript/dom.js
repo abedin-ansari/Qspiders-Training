@@ -117,79 +117,79 @@
 
 // console.log(section);
 
-const users = [
-  {
-    id: 1,
-    username: "john doe",
-    email: "john@gmail.com",
-    company: { companyName: "HCL", designation: "dev" },
-  },
-  {
-    id: 2,
-    username: "jane doe",
-    email: "jane@gmail.com",
-    company: { companyName: "Wipro", designation: "tester" },
-  },
-  {
-    id: 3,
-    username: "harry doe",
-    email: "harry@gmail.com",
-    company: { companyName: "Capgemini", designation: "hr" },
-  },
-];
+// const users = [
+//   {
+//     id: 1,
+//     username: "john doe",
+//     email: "john@gmail.com",
+//     company: { companyName: "HCL", designation: "dev" },
+//   },
+//   {
+//     id: 2,
+//     username: "jane doe",
+//     email: "jane@gmail.com",
+//     company: { companyName: "Wipro", designation: "tester" },
+//   },
+//   {
+//     id: 3,
+//     username: "harry doe",
+//     email: "harry@gmail.com",
+//     company: { companyName: "Capgemini", designation: "hr" },
+//   },
+// ];
 
-const mainTag = document.querySelector("main");
-users.map((ele) => {
-  let {
-    username,
-    email,
-    company: { companyName, designation },
-  } = ele;
+// const mainTag = document.querySelector("main");
+// users.map((ele) => {
+//   let {
+//     username,
+//     email,
+//     company: { companyName, designation },
+//   } = ele;
 
-  const cardContainer = document.createElement("article");
+//   const cardContainer = document.createElement("article");
 
-  cardContainer.innerHTML = `
-  <h2>Username : ${username}</h2>
-  <p>Email : ${email}</p>
-  <p>company : ${companyName}</p>
-  <p>Designation : ${designation}</p>
-  `;
-  mainTag.append(cardContainer);
-});
+//   cardContainer.innerHTML = `
+//   <h2>Username : ${username}</h2>
+//   <p>Email : ${email}</p>
+//   <p>company : ${companyName}</p>
+//   <p>Designation : ${designation}</p>
+//   `;
+//   mainTag.append(cardContainer);
+// });
 
-// Create a table
+// // Create a table
 
-const tableTag = document.createElement("table");
-tableTag.border = "2px";
+// const tableTag = document.createElement("table");
+// tableTag.border = "2px";
 
-const tr1 = document.createElement("tr");
-const tr2 = document.createElement("tr");
-const tr3 = document.createElement("tr");
+// const tr1 = document.createElement("tr");
+// const tr2 = document.createElement("tr");
+// const tr3 = document.createElement("tr");
 
-const td1 = document.createElement("td");
-const td2 = document.createElement("td");
-const td3 = document.createElement("td");
-const td4 = document.createElement("td");
-const td5 = document.createElement("td");
-const td6 = document.createElement("td");
-const td7 = document.createElement("td");
-const td8 = document.createElement("td");
-const td9 = document.createElement("td");
+// const td1 = document.createElement("td");
+// const td2 = document.createElement("td");
+// const td3 = document.createElement("td");
+// const td4 = document.createElement("td");
+// const td5 = document.createElement("td");
+// const td6 = document.createElement("td");
+// const td7 = document.createElement("td");
+// const td8 = document.createElement("td");
+// const td9 = document.createElement("td");
 
-td1.innerText = "A";
-td2.innerText = "B";
-td3.innerText = "C";
-td4.innerText = "D";
-td5.innerText = "E";
-td6.innerText = "F";
-td7.innerText = "G";
-td8.innerText = "H";
-td9.innerText = "I";
+// td1.innerText = "A";
+// td2.innerText = "B";
+// td3.innerText = "C";
+// td4.innerText = "D";
+// td5.innerText = "E";
+// td6.innerText = "F";
+// td7.innerText = "G";
+// td8.innerText = "H";
+// td9.innerText = "I";
 
-tr1.append(td1, td2, td3);
-tr2.append(td4, td5, td6);
-tr3.append(td7, td8, td9);
+// tr1.append(td1, td2, td3);
+// tr2.append(td4, td5, td6);
+// tr3.append(td7, td8, td9);
 
-tableTag.append(tr1, tr2, tr3);
+// tableTag.append(tr1, tr2, tr3);
 
-mainTag.append(tableTag);
+// mainTag.append(tableTag);
