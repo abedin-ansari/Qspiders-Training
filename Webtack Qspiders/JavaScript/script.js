@@ -352,46 +352,46 @@
 // Local Storage : Local storage is used to ....... (There is no Expiry Date of Local Storage)
 // Session Storage : Has Expiry Date
 
-function storeDataInLocalStorage() {
-  // String Values
-  let value = "Hello";
-  localStorage.setItem("newData", value);
-  // for Objects
-  let obj = { text: "Hello World" };
-  localStorage.setItem("objectData", JSON.stringify(obj));
-  // for Array
-  let arr = [10, 20, 30];
-  localStorage.setItem("arrayData", JSON.stringify(arr));
-}
-// storeDataInLocalStorage();
-function getDataFromLocalStorage() {
-  // get Local Storage Data
-  let strData = localStorage.getItem("newData");
-  let arrData = JSON.parse(localStorage.getItem("arrayData"));
-  let objData = JSON.parse(localStorage.getItem("objectData"));
-  console.log(strData);
-  console.log(arrData);
-  console.log(objData);
-}
-// getDataFromLocalStorage();
+// function storeDataInLocalStorage() {
+//   // String Values
+//   let value = "Hello";
+//   localStorage.setItem("newData", value);
+//   // for Objects
+//   let obj = { text: "Hello World" };
+//   localStorage.setItem("objectData", JSON.stringify(obj));
+//   // for Array
+//   let arr = [10, 20, 30];
+//   localStorage.setItem("arrayData", JSON.stringify(arr));
+// }
+// // storeDataInLocalStorage();
+// function getDataFromLocalStorage() {
+//   // get Local Storage Data
+//   let strData = localStorage.getItem("newData");
+//   let arrData = JSON.parse(localStorage.getItem("arrayData"));
+//   let objData = JSON.parse(localStorage.getItem("objectData"));
+//   console.log(strData);
+//   console.log(arrData);
+//   console.log(objData);
+// }
+// // getDataFromLocalStorage();
 
-function removeDataFromLocalStorage() {
-  localStorage.removeItem("newData");
-}
-// removeDataFromLocalStorage();
+// function removeDataFromLocalStorage() {
+//   localStorage.removeItem("newData");
+// }
+// // removeDataFromLocalStorage();
 
-function clearLocalStorage() {
-  localStorage.clear();
-}
-// clearLocalStorage();
+// function clearLocalStorage() {
+//   localStorage.clear();
+// }
+// // clearLocalStorage();
 
-// setInterval and setTimeout
+// // setInterval and setTimeout
 
-let intervalId = setInterval(() => {
-  console.log("Hello JS");
-}, 2000);
+// let intervalId = setInterval(() => {
+//   console.log("Hello JS");
+// }, 2000);
 
-setTimeout(() => {
-  console.log("Time out");
-  clearInterval(intervalId);
-}, 8000);
+// setTimeout(() => {
+//   console.log("Time out");
+//   clearInterval(intervalId);
+// }, 8000);
