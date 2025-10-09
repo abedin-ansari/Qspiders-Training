@@ -1,12 +1,12 @@
 import Child1 from "./Child1";
 
 const Parent = () => {
-  let str = "Hello from Parent";
+  let str = "Hello React";
 
   return (
     <div>
-      <h1>Parent</h1>
-      <Child1 data1={str} />
+      <h1>ParentA Component</h1>
+      <Child1 prop1={str} />
     </div>
   );
 };

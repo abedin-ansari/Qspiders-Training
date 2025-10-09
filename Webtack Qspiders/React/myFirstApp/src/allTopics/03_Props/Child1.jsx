@@ -1,11 +1,12 @@
-import React from "react";
+import Child2 from "./Child2";
 
-const Child1 = (props) => {
-  console.log(props);
+const Child1 = (x) => {
+  console.log(x);
 
   return (
     <div>
-      <h1>Child {props.data1}</h1>
+      Child1 Component
+      <Child2 prop2={x.prop1} />
     </div>
   );
 };

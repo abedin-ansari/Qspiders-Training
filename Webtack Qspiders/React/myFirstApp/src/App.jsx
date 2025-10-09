@@ -4,6 +4,7 @@ import CounterInFbc from "./allTopics/02_States/CounterInFbc";
 import StatesInCbc from "./allTopics/02_States/StatesInCbc";
 import StatesInFbc from "./allTopics/02_States/StatesInFbc";
 import Parent from "./allTopics/03_Props/Parent";
+import Context1 from "./allTopics/05_Context/Context1";
 import Card from "./components/Card";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       {/* <StatesInFbc/> */}
       {/* <CounterInFbc /> */}
       {/* <StatesInCbc /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <Context1 />
     </>
   );
 }
