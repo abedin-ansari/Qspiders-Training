@@ -1,16 +1,14 @@
-import React, { useContext } from "react";
-import ChildZ from "./ChildZ";
-import { StoreRoomContext } from "./Context1";
+import { useContext } from "react";
 import ChildY from "./ChildY";
+import { StoreRoomContext } from "./Context1";
 
 const ParentX = () => {
   let { state } = useContext(StoreRoomContext);
 
   return (
     <div>
-      ParentX component {state}
+      ParentX Component {state}
       <ChildY />
-      <ChildZ />
     </div>
   );
 };

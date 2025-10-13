@@ -1,24 +1,23 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import ParentX from "./ParentX";
 
-export const StoreRoomContext = createContext(); //  Returen 2 things : Provider , Consumer (Return context object)
+// STEP 1 :- create a context
+export const StoreRoomContext = createContext(); // returns Context Object
 
 const Context1 = () => {
   const [state, setState] = useState("");
 
-  let str = "Hello from Context API";
-  let arr = [10, 20, 30, 40];
-  let obj = { name: "John", age: 30 };
+  let str = "React Js";
+  let arr = [10, 20, 30];
+  let obj = { ename: "John" };
   let display = (x) => setState(x);
 
   return (
     <div>
       <StoreRoomContext.Provider value={{ str, arr, obj, display, state }}>
-        <ParentX />
-        {/* All the child component can access the value (Step: 2 -> Provide a Context)*/}
+        <ParentX /> {/* STEP 2 :- provide a context */}
       </StoreRoomContext.Provider>
     </div>
   );
 };
-
 export default Context1;
