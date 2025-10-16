@@ -10,6 +10,8 @@ import Parent1 from "./allTopics/06_childrenProps/Parent1";
 import Context2 from "./allTopics/07_Context_2/Context2";
 import ParentA1 from "./allTopics/07_Context_2/ParentA1";
 import ControlledForm1 from "./allTopics/08_Forms/ControlledForm1";
+import FetchUsers from "./allTopics/09_LifeCycle/FetchUsers";
+import LifeCycleInFbc from "./allTopics/09_LifeCycle/LifeCycleInFbc";
 import Card from "./components/Card";
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
       {/* <Context1/> */}
       {/* <Parent1/> */}
       {/* <ParentA1 /> */}
-      <ControlledForm1 />
+      {/* {<ControlledForm1 />} */}
+      {/* <LifeCycleInFbc /> */}
+      <FetchUsers />
     </>
   );
 }
